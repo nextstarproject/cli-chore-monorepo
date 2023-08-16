@@ -3,6 +3,7 @@
 import { program } from "commander";
 import unifiedMain from "./commands/unified";
 import semver from "semver";
+import chalk from "chalk";
 
 program.name("ns-version").description("CLI unified Update version").version("1.0.0");
 
@@ -14,16 +15,20 @@ program
 	.option("-s, --spaces <number>", "number of spaces to indent", "2")
 	.action(async (str, options) => {
 		if (Number.isNaN(options.spaces)) {
-			console.error("spaces is must number");
+			console.error(chalk.red("error: spaces is must number"));
 			return;
 		}
 		const version = semver.valid(str);
 		if (version == null || version == undefined) {
-			console.error("version is must conform to specifications: x.x.x");
+			console.error(chalk.red("error: version is must conform to specifications: x.x.x"));
 			return;
 		}
 		const spaces = Number(options.spaces);
-		await unifiedMain(version, spaces);
+		try {
+			await unifiedMain(version, spaces);
+		} catch (error) {
+			console.error(chalk.red(error));
+		}
 	});
 
 program
