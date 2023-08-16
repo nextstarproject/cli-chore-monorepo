@@ -1,6 +1,6 @@
 {
   "name": "@nextstar/version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "unified update multiple package version",
   "main": "index.js",
   "private": false,
@@ -10,7 +10,11 @@
   "files": [
     "bin"
   ],
-  "repository": "https://github.com/nextstarproject/cli-chore-monorepo/tree/master/packages/version",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nextstarproject/cli-chore-monorepo.git"
+  },
+  "homepage": "https://github.com/nextstarproject/cli-chore-monorepo/tree/master/packages/version",
   "scripts": {
     "dev": "rimraf bin && tsc -p .",
     "build": "tsc -p .",
