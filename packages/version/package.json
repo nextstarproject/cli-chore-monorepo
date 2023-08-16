@@ -7,6 +7,10 @@
   "bin": {
     "ns-version": "./bin/src/index.js"
   },
+  "files": [
+    "bin"
+  ],
+  "repository": "https://github.com/nextstarproject/cli-chore-monorepo/tree/master/packages/version",
   "scripts": {
     "dev": "rimraf bin && tsc -p .",
     "build": "tsc -p .",
