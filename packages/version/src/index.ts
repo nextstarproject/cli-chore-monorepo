@@ -16,9 +16,9 @@ program.version(appInfo.version, "-v, --version");
 program
 	.command("unified")
 	.alias("u")
-	.description("Unified update version, default ignore node_modules")
-	.argument("<version>", "target version")
-	.option("-s, --spaces <number>", "number of spaces to indent", "2")
+	.description("Unified update to the specified version, default ignore node_modules")
+	.argument("<version>", "Specifying the version")
+	.option("-s, --spaces <number>", "Number of spaces to indent", "2")
 	.action(async (str, options) => {
 		if (Number.isNaN(options.spaces)) {
 			console.error(chalk.red("error: spaces is must number"));
@@ -40,10 +40,10 @@ program
 program
 	.command("update")
 	.alias("up")
-	.description("target package update version")
+	.description("Upgrade the version under the specified workspace")
 	.option(
 		"-w, --workspace <workspace...>",
-		"target package workspace default: **, [workspace]/package.json, ignore node_modules",
+		"Target workspace, default: **, Results: [workspace]/package.json, ignore node_modules",
 		"**"
 	)
 	.option(
@@ -51,7 +51,7 @@ program
 		"Increment a version by the specified level.  Level can be one of: major, minor, patch, premajor, preminor, prepatch, or prerelease.  Default level is 'patch'. Only one version may be specified.",
 		"patch"
 	)
-	.option("-s, --spaces <number>", "number of spaces to indent", "2")
+	.option("-s, --spaces <number>", "Number of spaces to indent", "2")
 	// 如果不存在argument，则第一个参数为options
 	.action(async (options) => {
 		let workspaces: string[] = ["**"];
