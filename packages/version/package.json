@@ -1,6 +1,6 @@
 {
-  "name": "@nextstar/version",
-  "version": "1.0.1",
+  "name": "@nextstarproject/version",
+  "version": "1.0.0",
   "description": "unified update multiple package version",
   "main": "index.js",
   "private": false,
