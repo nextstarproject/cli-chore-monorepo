@@ -1,0 +1,22 @@
+{
+  "name": "@nextstar/version",
+  "version": "1.0.0",
+  "description": "unified update multiple package version",
+  "main": "index.js",
+  "bin": {
+    "ns-version": "./bin/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nextstar",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6"
+  }
+}

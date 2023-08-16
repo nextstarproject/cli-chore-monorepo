@@ -1,0 +1,18 @@
+{
+  "name": "@nextstar/cli-chore-monorepo",
+  "version": "1.0.0",
+  "description": "other chore cli repo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nextstarproject/cli-chore-monorepo"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nextstarproject",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.0.2"
+  }
+}
