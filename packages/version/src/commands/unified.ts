@@ -1,7 +1,7 @@
 import { glob, globSync, globStream, globStreamSync, Glob } from "glob";
 import cliProgress from "cli-progress";
 import fs from "fs-extra";
-const unifiedMain = async (version: string) => {
+const unifiedMain = async (version: string, spaces: number) => {
 	const packageFiles = await glob("**/package.json", { ignore: "node_modules/**" });
 	if (packageFiles.length == 0) {
 		console.log("not exist package.json in current dir");
@@ -16,7 +16,7 @@ const unifiedMain = async (version: string) => {
 		console.log(file);
 		console.log(packageObj.version);
 		packageObj.version = version;
-		await fs.writeJson(file, packageObj);
+		await fs.writeJson(file, packageObj, { spaces: spaces });
 		// bar.update(index);
 	}
 	// bar.stop();

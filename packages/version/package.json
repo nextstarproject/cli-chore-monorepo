@@ -1,13 +1,14 @@
 {
   "name": "@nextstar/version",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "unified update multiple package version",
   "main": "index.js",
   "bin": {
     "ns-version": "./bin/src/index.js"
   },
   "scripts": {
-    "build": "rimraf bin && tsc -p .",
+    "dev": "rimraf bin && tsc -p .",
+    "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "nextstar",
@@ -23,6 +24,8 @@
     "@types/cli-progress": "^3.11.0",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^20.5.0",
+    "@types/semver": "^7.5.0",
+    "rimraf": "^5.0.1",
     "typescript": "^5.1.6"
   }
 }

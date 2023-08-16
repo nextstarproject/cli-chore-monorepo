@@ -11,9 +11,6 @@ importers:
       prettier:
         specifier: ^3.0.2
         version: 3.0.2
-      rimraf:
-        specifier: ^5.0.1
-        version: 5.0.1
 
   packages/version:
     dependencies:
@@ -42,6 +39,12 @@ importers:
       '@types/node':
         specifier: ^20.5.0
         version: 20.5.0
+      '@types/semver':
+        specifier: ^7.5.0
+        version: 7.5.0
+      rimraf:
+        specifier: ^5.0.1
+        version: 5.0.1
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -86,6 +89,10 @@ packages:
 
   /@types/node@20.5.0:
     resolution: {integrity: sha512-Mgq7eCtoTjT89FqNoTzzXg2XvCi5VMhRV6+I2aYanc6kQCBImeNaAYRs/DyoVqk1YEUJK5gN9VO7HRIdz4Wo3Q==}
+    dev: true
+
+  /@types/semver@7.5.0:
+    resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
     dev: true
 
   /ansi-regex@5.0.1:
