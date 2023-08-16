@@ -54,8 +54,6 @@ program
 	.option("-s, --spaces <number>", "number of spaces to indent", "2")
 	// 如果不存在argument，则第一个参数为options
 	.action(async (options) => {
-		console.log(options);
-
 		let workspaces: string[] = ["**"];
 		let increment: ReleaseType = "patch";
 		if (options?.workspace != undefined && typeof options?.workspace == "object") {
@@ -83,8 +81,6 @@ program
 			return;
 		}
 		const spaces = Number(options.spaces);
-
-		console.log(workspaces, increment, spaces);
 
 		try {
 			await updateMain(workspaces, increment, spaces);
