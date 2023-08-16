@@ -20,11 +20,9 @@ const updateMain = async (workspaces: string[], increment: ReleaseType, spaces: 
 		return;
 	}
 	const list: updateVersion[] = [];
-	// create a new progress bar instance and use shades_classic theme
-	console.log(chalk.blue("update package.json files: "));
 	const bar = new cliProgress.SingleBar(
 		{
-			format: "update [{bar}] {percentage}% | {value}/{total} | file: {speed}",
+			format: "update files [{bar}] {percentage}% | {value}/{total} | file: {speed}",
 		},
 		cliProgress.Presets.legacy
 	);
@@ -64,7 +62,6 @@ const updateMain = async (workspaces: string[], increment: ReleaseType, spaces: 
 		});
 	}
 	bar.stop();
-	console.log(chalk.green(`finish package.json update version count: ${packageFiles.length}`));
 	console.table(list, ["file", "old", "new"]);
 };
 

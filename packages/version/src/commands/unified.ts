@@ -10,11 +10,9 @@ const unifiedMain = async (version: string, spaces: number) => {
 		console.log(chalk.red("not exist package.json in current dir"));
 		return;
 	}
-	// create a new progress bar instance and use shades_classic theme
-	console.log(chalk.blue("update package.json files: "));
 	const bar = new cliProgress.SingleBar(
 		{
-			format: "update [{bar}] {percentage}% | {value}/{total} | file: {speed}",
+			format: "update files [{bar}] {percentage}% | {value}/{total} | file: {speed}",
 		},
 		cliProgress.Presets.legacy
 	);
@@ -34,7 +32,6 @@ const unifiedMain = async (version: string, spaces: number) => {
 		});
 	}
 	bar.stop();
-	console.log(chalk.green(`finish package.json update version count: ${packageFiles.length}`));
 	console.table(
 		packageFiles.map((x) => ({
 			file: x,
