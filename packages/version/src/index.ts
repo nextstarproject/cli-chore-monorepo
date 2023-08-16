@@ -4,8 +4,12 @@ import { program } from "commander";
 import unifiedMain from "./commands/unified";
 import semver from "semver";
 import chalk from "chalk";
+import appInfo from "../package.json";
 
-program.name("ns-version").description("CLI unified Update version").version("1.0.0");
+program.name("ns-version").description("CLI unified Update version");
+
+// 获取版本信息
+program.version(appInfo.version, "-v, --version");
 
 program
 	.command("unified")
