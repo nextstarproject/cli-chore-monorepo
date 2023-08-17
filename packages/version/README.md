@@ -101,3 +101,11 @@ Options:
 
 > 其中 `-w` 默认 `**` 其实拼接后和 `unified` 是一样的。
 
+## 相关包
+
+- [chalk](https://www.npmjs.com/package/chalk) Terminal string styling done right
+- [cli-progress](https://www.npmjs.com/package/cli-progress) easy to use progress-bar for command-line/terminal applications
+- [commander](https://www.npmjs.com/package/commander) the complete solution for node.js command-line programs
+- [fs-extra](https://www.npmjs.com/package/fs-extra) fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as recursive mkdir, copy, and remove.
+- [glob](https://www.npmjs.com/package/glob) the most correct and second fastest glob implementation in JavaScript
+- [semver](https://www.npmjs.com/package/semver) The semantic version parser used by npm.

@@ -1,12 +1,19 @@
 {
   "name": "@nextstarproject/version",
-  "version": "1.0.1",
-  "description": "unified update multiple package version",
+  "version": "1.0.2",
+  "description": "unified update multiple package version.",
   "main": "index.js",
   "private": false,
   "bin": {
     "ns-version": "./bin/src/index.js"
   },
+  "keywords": [
+    "version",
+    "unified",
+    "node-cli",
+    "cli",
+    "package"
+  ],
   "files": [
     "bin"
   ],

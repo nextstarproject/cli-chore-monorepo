@@ -1,6 +1,6 @@
 {
   "name": "@nextstar/cli-chore-monorepo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "other chore cli repo",
   "scripts": {
     "dev": "pnpm --filter './packages/**' dev",
