@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "other chore cli repo",
   "scripts": {
-    "prepare": "pnpm husky install",
+    "dev": "pnpm --filter './packages/**' dev",
     "lint": "pnpm --filter './packages/**' lint",
     "lint:error": "pnpm --filter './packages/**' lint:error",
     "tsc": "pnpm --filter './packages/**' tsc",
