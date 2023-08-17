@@ -1,6 +1,6 @@
 {
   "name": "@nextstarproject/version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "unified update multiple package version",
   "main": "index.js",
   "private": false,
@@ -18,7 +18,9 @@
   "scripts": {
     "dev": "rimraf bin && tsc -p .",
     "build": "tsc -p .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc --noEmit --skipLibCheck --incremental",
+    "lint": "eslint --ext .jsx,.js,.tsx,.ts src/**/*",
+    "lint:error": "eslint --quiet --ext .jsx,.js,.tsx,.ts src/**/*"
   },
   "author": "nextstar",
   "license": "MIT",

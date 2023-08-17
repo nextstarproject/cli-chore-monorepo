@@ -2,17 +2,25 @@
   "name": "@nextstar/cli-chore-monorepo",
   "version": "1.0.1",
   "description": "other chore cli repo",
-  "main": "index.js",
+  "scripts": {
+    "prepare": "pnpm husky install",
+    "lint": "pnpm --filter './packages/**' lint",
+    "lint:error": "pnpm --filter './packages/**' lint:error",
+    "tsc": "pnpm --filter './packages/**' tsc",
+    "build": "pnpm --filter './packages/**' build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nextstarproject/cli-chore-monorepo"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "nextstarproject",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.2"
   }
 }

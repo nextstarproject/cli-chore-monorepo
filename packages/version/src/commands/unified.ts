@@ -5,6 +5,7 @@ import chalk from "chalk";
 import delay from "../utils/delay";
 
 const unifiedMain = async (version: string, spaces: number) => {
+	var a = "123";
 	const packageFiles = await glob("**/package.json", { ignore: "node_modules/**" });
 	if (packageFiles.length == 0) {
 		console.log(chalk.red("not exist package.json in current dir"));
