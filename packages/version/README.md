@@ -2,7 +2,7 @@
 
 > ps: 之前使用的是 `@nextstar/version` ，后来改成了 `@nextstarproject/version`，主要原因在于 github 和 npm 的 scope 设置一样方便自动化
 
-[![github repo](https://img.shields.io/badge/github-@nextstarproject/version-1677ff)](https://github.com/nextstarproject/cli-chore-monorepo)  [![GitHub package](https://img.shields.io/badge/github-package-blue) ](https://github.com/nextstarproject/cli-chore-monorepo/pkgs/npm/version)  [![npm](https://img.shields.io/npm/v/%40nextstarproject%2Fversion)](https://www.npmjs.com/package/@nextstarproject/version)
+[![github repo](https://img.shields.io/badge/github-@nextstarproject/version-1677ff)](https://github.com/nextstarproject/cli-chore-monorepo/tree/master/packages/version)  [![GitHub package](https://img.shields.io/badge/github-package-blue) ](https://github.com/nextstarproject/cli-chore-monorepo/pkgs/npm/version)  [![npm](https://img.shields.io/npm/v/%40nextstarproject%2Fversion)](https://www.npmjs.com/package/@nextstarproject/version)
 
 ## 安装
 
